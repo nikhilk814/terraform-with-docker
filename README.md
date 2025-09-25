@@ -20,42 +20,6 @@ sudo mv terraform /usr/local/bin/
 terraform version
 <img width="582" height="147" alt="Image" src="https://github.com/user-attachments/assets/b8db5f5b-77ae-488e-8a5a-3b5b220f10b6" />
 
-Here’s a professional and clean **Markdown README** for your Terraform Docker project including instructions for installing Terraform and Docker on CentOS **without adding the HashiCorp repository**:
-
-````markdown
-# Terraform Docker Project
-
-This project demonstrates how to use Terraform to pull a Docker image from Docker Hub and run a Docker container on a CentOS system.
-
----
-
-## Prerequisites
-
-- CentOS 7 or 8
-- Root or sudo access
-
----
-
-## 1. Install Terraform on CentOS
-
-You can install Terraform manually by downloading the binary:
-
-```bash
-# Download the latest Terraform binary
-wget https://releases.hashicorp.com/terraform/1.6.2/terraform_1.6.2_linux_amd64.zip
-
-# Unzip the downloaded file
-unzip terraform_1.6.2_linux_amd64.zip
-
-# Move terraform binary to /usr/local/bin
-sudo mv terraform /usr/local/bin/
-
-# Verify installation
-terraform version
-````
-
----
-
 ## 2. Install Docker on CentOS
 
 ```bash
