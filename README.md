@@ -1,6 +1,5 @@
 # Terraform Docker Project
-
-This project demonstrates how to use Terraform to pull a Docker image from Docker Hub and run a Docker container on a CentOS system.
+Terraform to pull a Docker image from Docker Hub and run a Docker container on a CentOS system.
 
 ---
 
@@ -164,6 +163,36 @@ terraform destroy
 <img width="1153" height="735" alt="6-1" src="https://github.com/user-attachments/assets/cc968c0f-6a86-41fa-8c95-f4c14dcc6753" />
 
 ```
+1. What is IaC (Infrastructure as Code)?
+Ans: IaC means managing and provisioning IT infrastructure using code instead of doing it manually. You write a code file to create 3 virtual machines. Running the code automatically creates 3 VMs instead of creating them manually one by one.
 
+2. How does Terraform work?
+Ans: Terraform reads your code, figures out what resources you want, talks to cloud or Docker, and manages them.
+Write .tf files – Define the infrastructure you want.
+Run terraform init → Downloads required providers.
+Run terraform plan → Shows what Terraform will do without making changes.
+Run terraform apply → Creates or updates the resources as per your code.
+Run terraform destroy → Deletes all the resources that Terraform created.Terraform reads your code, figures out what resources you want, talks to cloud or Docker, and manages them.
+
+4. Difference between terraform apply and terraform plan?
+Ans: terraform plan	Shows what will happen if you run apply	“I will create 1 hello-app container”
+terraform apply	Actually creates or updates resources	Creates the hello-app container on Docker
+Think: plan = preview, apply = execute
+
+5. What are Terraform providers?
+Ans: Providers are plugins that tell Terraform how to talk to different platforms (AWS, Azure, Docker, etc.). Docker provider → Terraform talks to Docker. AWS provider → Terraform talks to AWS to create EC2, S3, etc.
+
+6. What is resource dependency?
+Ans: Resource dependency is when one resource depends on another to be created first. You want to create a Docker container using an image. The image must exist before the container is created. Terraform automatically detects dependencies or you can specify using depends_on.
+
+7. How do you handle secret variables?
+Ans: Secrets (passwords, tokens) should not be in code. Use .tfvars file (and ignore it in Git) Use environment variables (TF_VAR_password=xyz). Use secret managers (Vault, AWS Secrets Manager)
+Example:
+export TF_VAR_docker_password="my-secret-token"
+
+8. Explain the benefits of Terraform
+Ans: Automation – Create/update infrastructure with a single command. Consistency – Same code creates same environment every time. Multi-cloud support – Works with AWS, Azure, Docker, and more. Dependency management – Creates resources in correct order.
+Example:
+Instead of manually creating 3 servers, 2 networks, and a database, Terraform can create all in one go using code.
 ---
 
