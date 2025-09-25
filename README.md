@@ -128,14 +128,12 @@ terraform apply
 <img width="1216" height="627" alt="3" src="https://github.com/user-attachments/assets/a95a8a4b-ae1d-4add-87e7-593eeb206f40" />
 <img width="1440" height="482" alt="3-1" src="https://github.com/user-attachments/assets/37be227b-57cb-42fa-b038-b52c23c3e03b" />
 
-```
 terrafrom plan
-
+<img width="1172" height="660" alt="image" src="https://github.com/user-attachments/assets/1f0c047b-ecb7-42e8-a304-adb5e5cc8d95" />
 
 > The `hello-app` container will now be running on port `3000`.
 <img width="1107" height="46" alt="4" src="https://github.com/user-attachments/assets/73b70189-4f17-45c6-9560-f80788857392" />
 
----
 
 ## 6. Verify Container
 
@@ -160,6 +158,17 @@ terraform destroy
 <img width="1235" height="737" alt="6" src="https://github.com/user-attachments/assets/77498eae-935c-4c1a-9907-fce555b1bd84" />
 
 <img width="1153" height="735" alt="6-1" src="https://github.com/user-attachments/assets/cc968c0f-6a86-41fa-8c95-f4c14dcc6753" />
+
+**After apply, open http://localhost:8080 in a browser — you should see the Nginx Welcome Page.**
+<img width="1242" height="778" alt="image" src="https://github.com/user-attachments/assets/63167dcc-1b10-4aaa-bb3d-c7075bc92da4" />
+
+**Create a .gitignore file:**
+
+nano .gitignore
+
+<img width="726" height="362" alt="7" src="https://github.com/user-attachments/assets/2a150133-839a-4468-ab84-6f74ece6bbd1" />
+
+
 
 
 ***Question and Answer***
