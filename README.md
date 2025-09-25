@@ -162,6 +162,8 @@ terraform destroy
 
 <img width="1153" height="735" alt="6-1" src="https://github.com/user-attachments/assets/cc968c0f-6a86-41fa-8c95-f4c14dcc6753" />
 
+
+***Question and Answer***
 ```
 1. What is IaC (Infrastructure as Code)?
 Ans: IaC means managing and provisioning IT infrastructure using code instead of doing it manually. You write a code file to create 3 virtual machines. Running the code automatically creates 3 VMs instead of creating them manually one by one.
