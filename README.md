@@ -171,7 +171,8 @@ nano .gitignore
 
 
 
-**Question and Answer**
+
+# **Question and Answer**
 ```
 1. What is IaC (Infrastructure as Code)?
 Ans: IaC means managing and provisioning IT infrastructure using code instead of doing it manually. You write a code file to create 3 virtual machines. Running the code automatically creates 3 VMs instead of creating them manually one by one.
