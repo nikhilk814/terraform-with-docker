@@ -113,7 +113,6 @@ docker_password = "docker-token"
 
 ## 5. Deploy the Container
 
-```bash
 # Initialize Terraform
 terraform init
 
