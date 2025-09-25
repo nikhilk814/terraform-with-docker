@@ -16,10 +16,6 @@ unzip terraform_1.6.2_linux_amd64.zip
 # Move terraform binary to /usr/local/bin
 sudo mv terraform /usr/local/bin/
 
-# Verify installation
-terraform version
-<img width="582" height="147" alt="Image" src="https://github.com/user-attachments/assets/b8db5f5b-77ae-488e-8a5a-3b5b220f10b6" />
-
 ## 2. Install Docker on CentOS
 
 ```bash
@@ -42,6 +38,9 @@ sudo systemctl enable docker
 # Verify Docker installation
 docker version
 ```
+<img width="582" height="147" alt="Image" src="https://github.com/user-attachments/assets/b8db5f5b-77ae-488e-8a5a-3b5b220f10b6" />
+
+<img width="561" height="471" alt="image" src="https://github.com/user-attachments/assets/16e64dab-9098-4f6a-8d5d-3d99bbc93933" />
 
 added to the `docker` group if you want to run Docker without `sudo`:
 
@@ -49,9 +48,6 @@ added to the `docker` group if you want to run Docker without `sudo`:
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-<img width="561" height="471" alt="image" src="https://github.com/user-attachments/assets/16e64dab-9098-4f6a-8d5d-3d99bbc93933" />
-
----
 
 **main.tf**:
 
